@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="im/brand.png">
+    <title>Melojam - Discover</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@200&display=swap');
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav .brand img {
+            margin-right: 10px;
+            width: 42px;
+            align-items: center;
+        }
+
+        .nav {
+            width: 100%;
+            height: 7%;
+            margin: auto;
+            background-color: rgb(139, 139, 139);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color:#313131; */
+            border-color: #c971ff;
+            border-width: 2px;
+        }
+
+        .nav ul {
+            display: flex;
+        }
+
+        .nav ul li {
+            margin-left: 20px;
+            margin-right: 20px;
+            color: aliceblue;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+        }
+
+        .dis h1 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        .owork {
+            padding-top: 5px;
+            height: 385px;
+            width: 100%;
+            background-color: rgb(202, 214, 210);
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .owork h1 {
+            color: black;
+            font-size: 30px;
+            font-weight: 1000;
+            align-items: center;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .owork .workpic {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .owork .workpic .picture img {
+            position: relative;
+            width: 400px;
+            height: auto;
+            margin-left: 80px;
+            display: flex;
+        }
+
+
+        .owork .workpic .picture h3 {
+            font-size: 25px;
+            font-weight: 800;
+            margin-left: 80px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+        }
+
+        @media (max-width : 500px) {
+            .nav {
+                height: 20px;
+                width: 100%;
+            }
+
+            .nav ul li {
+                margin-left: 10px;
+                margin-right: 5px;
+            }
+
+            .nav .brand img {
+                width: 25px;
+                margin-right: 5px;
+            }
+
+            .nav ul li a {
+                font-size: 10px;
+            }
+
+            .owork {
+                width: 100%;
+                height: 900px;
+                color: rgb(202, 214, 210);
+            }
+
+            .owork h1 {
+                font-size: 30px;
+                font-weight: bolder;
+            }
+
+            .owork .workpic {
+                display: contents;
+                text-align: center;
+                align-items: center;
+            }
+
+            .owork .workpic .picture img {
+                width: 350px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .owork .workpic .picture h3 {
+                font-size: 20px;
+                font-weight: 700;
+                text-align: center;
+                color: #000;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #nav {
+            background-color: #ccc;
+            padding: 10px;
+        }
+
+        #main {
+            padding: 10px;
+        }
+
+        #footer {
+            margin-top: 30px;
+            background-color: #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        .map {
+            background-image: url("im/a/map.png");
+            width: 100%;
+            height: 60%;
+        }
+
+        .map .loc {
+            /* top: 50px; */
+            left: 50px;
+            transform: translate(-50px, -50px);
+            background-color: #ffffff;
+            align-items: center;
+            text-align: center;
+            width: 40%;
+            margin-left: 70px;
+            border-radius: 5px;
+            text-align: center;
+            align-items: center;
+            padding-top: 15px;
+        }
+
+        .map .loc h2 {
+            padding: 5px 5px 5px 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #000;
+            font-weight: 700;
+            font-size: 28px;
+        }
+
+        .map .loc p {
+            padding-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #000;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <!-- <li><a href="discovr.html"><b>Discover</b></a></li> -->
+            <li><a href="#section1"><b>About</b></a></li>
+            <li><a href="login.html"><b>Sign in</b></a></li>
+            <li><a href="contact.html"><b>Reach us</b></a></li>
+        </ul>
+        <ul class="brand"><img src="im/brand.png" alt="MeloJam"></ul>
+    </div>
+    <div class="dis">
+        <h1><b>DISCOVER</b></h1>
+    </div>
+    <div class="owork">
+        <h1>Our Work</h1>
+        <div class="workpic">
+            <h3>Live Events</h3>
+            <div class="picture">
+                <img src="im/disc/livent.jpeg" alt="Live Events">
+            </div>
+            <div class="picture">
+                <img src="im/disc/production.jpg" alt="Music Production">
+                <h3>Music Production</h3>
+            </div>
+            <div class="picture">
+                <img src="im/disc/podcast.jpg" alt="Podcasts">
+                <h3>Podcasts</h3>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <h2>Our Work</h2>
+        <p>We are a team of experienced professionals who are dedicated to providing our clients with the highest
+            quality of work. We have a wide range of experience in different industries, and we are confident that we
+            can meet your needs.</p>
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services to our clients, including:</p>
+        <ul>
+            <li>Web design and development</li>
+            <li>Graphic design</li>
+            <li>Marketing</li>
+            <li>SEO</li>
+            <li>Social media marketing</li>
+        </ul>
+        <h2>About Us</h2>
+        <p>We are a team of passionate individuals who are committed to providing our clients with the best possible
+            service. We are always looking for new ways to improve our work, and we are always willing to go the extra
+            mile to make sure that our clients are satisfied.</p>
+    </div>
+    <div class="map">
+        <div class="loc">
+            <h2>Location</h2>
+            <p>We are located in Chandigarh, IN.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <h3>© Copyright 2023 Mannat. All Rights Reserved</h3>
+    </div>
+</body>

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@200&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url(conimg.png);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    /* font-family: sans-serif; */
+}
+
+/* ///////////////////////////////////////////////////////// nnnnnnewwwwwwwwwwwwwwwww */
+.center{
+  display: grid;
+  place-items: center;
+}
+
+.center .cont{
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  padding-bottom: 6px;
+}
+
+a{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 20px;
+  padding: 12px;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  width: 300px;
+  color:#bcb4b4;
+}
+
+a:nth-child(2){
+  background-color: rgb(59, 89, 152);
+  color: white;
+}
+
+a:nth-child(3){
+  background-color: rgb(131, 118, 118);
+  color: white;
+}
+
+a:nth-child(4){
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+a:nth-child(5){
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.input-grid{
+  display: grid;
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* .form-label{
+  padding-bottom: 5px;
+  color: white;
+} */
+
+.input {
+  /* padding: 15px;
+  width: 400px; */
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+input[type="submit"] {
+  background-color: rgb(218, 125, 255);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+} 
+
+.input :nth-child(2){
+  margin-bottom: 15px;
+}
+
+.form-down {
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.form-down button{
+  align-items: center;
+  color: white;
+  background-color:  rgb(121, 212, 121);
+  width: 300px;
+  border: none;
+  padding: 12px;
+  font-size: large;
+}
+/* ////////////////////////////////////////////////////////// new end */
+
+
+
+
+/* .container {
+    width: 300px;
+    margin: 0 auto;
+}
+  h1 {
+    text-align: center;
+    color: #fff;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  input[type="submit"] {
+    background-color: #746dd1;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  } */
+
+header .branding ul h6{
+    font-size: 15px;
+    font-family:'Times New Roman', Times, serif;
+    align-items:center;
+    cursor: pointer;
+    color: #bcb4b4;        /* ...............................................................ny Mannat*/
+    transition: .3s linear;
+}
+header .branding ul h6:hover{
+    color: rgb(218, 125, 255);
+
+}
+.brand img{
+    padding: 0 5px;
+    width: 85px;
+    align-items: center;
+    font-size: x-large;
+    font-style: oblique;
+}
+.brand {
+    display: flex;
+    align-items:center;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+}
+
+

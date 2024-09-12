@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <link rel="icon" href="im/brand.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melojam Support</title>
+    <head>
+        <title>Contact Us</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@200&display=swap');
+            *{
+                margin: 0%;
+                padding: 0%;
+                box-sizing:border-box;
+            }
+            body{
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                background-color: black;
+                background-position: center;
+                /* background-image:url(conimg.png); */
+                background-position: center;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .container h2{
+                font-size: 35px;
+                font-weight: 600;
+                color: aliceblue;
+            }
+            .container p{
+                font-size: 15px;
+                color: rgb(229, 229, 229);
+                padding-bottom: 7px;
+            }
+            form{
+                /* background-color:rgb(210, 144, 254); */
+                background-color: transparent;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px #f773fc;
+            }
+            input[type=text], input[type=email], textarea{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            input[type=submit]{
+                padding-top: 5px;
+                background-color: #53c257;
+                color: rgb(255, 255, 255);
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover{
+                background-color: #45a049;
+                color: black;
+            }
+            .container{
+                border-radius: 5px;
+                background-color:transparent;
+                padding: 20px;
+                margin: 20px;
+            }
+            label{
+                color: rgb(229, 229, 229);
+                padding-top: 5px;
+                font-style: italic;
+            }
+            .container .clip{
+                position:fixed;
+                right: 100px;
+                z-index: -1;
+                left: 0%;
+                top: 0%;
+                margin-top: 0;
+                object-fit: fill;
+                transform: scale(1);
+                transition: transform 0.5s ease-in-out;
+    
+            }
+            @media (min-aspect-ratio:16/9){
+                .container .clip{
+                    width:100%;
+                    height:auto;
+                    /* object-fit: fill; */
+                }            
+            }
+            @media (max-aspect-ratio:16/9){
+                .container .clip{
+                    width:auto;
+                    height:100%;
+                    /* object-fit: fill; */
+                }
+            }
+            @media (max-width:500px){
+                .container p{
+                    font-size: 10px;
+                }
+                label{
+                    font-size: 10px;
+                }
+            }
+            @media (min-width: 768px) {
+                .container .clip{
+                    transform: scale(1.2);       
+                }
+            }
+        </style>
+    </head>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <video autoplay loop muted plays-inline class="clip">
+                <source src="conc.mp4" type="video/mp4">
+            </video>
+            <h2>Melojam</h2>
+            <p>Our team is committed to delivering exceptional
+                customer service and ensuring that you have a great experience with us.</p>
+            <form action="#" method="post">
+                <label for="name"><b>Name :</b></label>
+                <input type="text" id="name" name="name" required>
+                <label for="email"><b>Email :</b></label>
+                <input type="email" id="email" name="email" required>
+                <label for="query"><b>Write your query here :</b></label>
+                <textarea id="query" name="query" rows="5" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </header>
+    
+</body>
+</html>

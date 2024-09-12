@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@200&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-family:'Poppins', sans-serif ;
+    /* background-image:url(im/a/gui.jpg); */
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+/*-----------------------------------------------------vid back-----------------------------------/*/
+.main .background-clip{
+    position: fixed;
+    right: 100px;
+    z-index: -1;
+    left: 5%;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+    
+}
+@media (min-aspect-ratio:16/9){
+    .main .background-clip{
+        width:100%;
+        height:auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .main .background-clip{
+        width:auto;
+        height:100%;
+    }
+}
+@media (min-width: 768px) {
+    .main .background-clip{
+      transform: scale(1.2);       
+    }
+  }
+/*/////////////////////////////////////////////////------------------------------vid//////////////*/
+.main h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    align-content: center;
+    padding-top: 120px;
+
+}
+.main h3{
+    color: white;
+    font-size: 30px;
+    align-content: center;
+    padding-top: 20px;
+
+}
+
+.main p {
+    color: white;
+    font-size: 20px;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 500px) {
+    .main p {
+      font-size: 5px;
+    }
+  }
+  
+
+
+.next ul{
+    text-align: center;
+    align-items:center;
+    text-align: center;
+}
+.next ul button{
+    align-items: center;
+    color: white;
+    background-color:  rgb(121, 212, 121);
+    width: 300px;
+    border: none;
+    padding: 12px;
+    font-size: large;
+    padding: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    border-radius: 20px;
+    border-color: white;
+    margin-bottom: 10px;
+}
+
+.next ul button :nth-child(2){
+    color: white;
+    background-color:  rgb(255, 255, 255);
+    width: 300px;
+    border: none;
+    padding: 12px;
+    font-size: large;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: white;
+}
+
+.indexnav .brand img{
+    margin-top: 5px;
+    margin-right: 20px;
+    width: 55px;
+    align-items: center;
+
+}
+
+
+.indexnav nav{
+    width: 100%;
+    height:10%;
+    margin: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color:#313131; */
+    border-color: #c971ff;
+    border-width: 2px;
+}
+.indexnav nav ul{
+    display: flex;
+}
+.indexnav nav ul li a{
+    text-decoration: none;
+}
+.indexnav nav ul li{
+    position: relative;
+    list-style-type: none;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.song_side nav ul ul li{
+    color: #ffffff;
+    position: absolute;
+}
+.indexnav nav ul li a{
+    color: #ffffff;
+}
+/* .song_side nav ul li a:hover{
+    color: #e7ffa1;
+}
+.song_side nav ul li:hover{
+    color: #e7ffa1;
+} */
+.song_side nav ul li:nth-child(1){
+    color: white;
+}
+
+
+.contact p{
+    padding-top: 5px;
+    padding-right: 5px;
+    color: rgb(0, 0, 0);;
+    font-size: 13px;
+    background-color: #c971ff;
+
+}
+
+
+.contactuss {
+    /* background-image: url(im/a/3dstart.png); */
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: .3s linear;
+    margin: 20px;
+    /* display:block; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    transition: .3s linear;
+
+}
+.contactuss .fa-brands{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.contactuss .fa-solid{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.contactuss h3 h5 a{
+    margin-right: 20px;
+    color:  rgb(180, 180, 180);
+}
+
+.contactuss h3 {
+    margin-top: 30px;
+    font-size: 25px;
+    color:rgb(180, 180, 180);
+}
+.contactuss h5{
+    font-size: 12px;
+    color: white;
+    margin-bottom: 10px;
+}
+.copyright h3 {
+    background-color: rgb(49, 49, 49);
+    letter-spacing: normal;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 10px;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.about {
+    margin-top: 150px;
+    padding: 10px;
+    background-color: #3a3a3a;
+
+}
+.about h2 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.about p {
+
+    font-size: 15px;
+    font-weight: 00;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+  
+
+/* .loc {
+    margin-top: 10px;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: url(im/a/map.png); 
+    
+    z-index: -1;
+}
+.loc .location {
+    background-color: #000000;
+    padding: 5px;
+}
+.loc .location h1{
+    color: yellow;
+    font-size: 25px;
+    font-weight: 300;
+
+}
+.loc .location h2{
+    color: yellow;
+    font-size: 23px;
+    font-weight: 250;
+
+} */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="im/brand.png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to Melojam</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <ul>
+                <li class="brand"><img src="im/brand.png" alt="MeloJam">MeloJam</li>
+                <h6><i>by Mannat</i></h6>
+            </ul>
+        </div>    
+        <div class="center">
+            <p class="cont">To continue, log in to Melojam.</p>
+            <a href="#">Continue with Facebook</a>
+            <a href="#">Continue with Apple</a>
+            <a href="#">Continue with Google</a>
+            <a href="#">Continue with Phone number</a>
+        </div>
+        <div class="center">
+            <form action="#">
+                <div class="input-grid">
+                    <!-- <label for="email" class="form-label">Email address or username</label> -->
+                    <!-- <input type="email" class="input" placeholder="Email address or username"/> -->
+                    <!-- <label id="email" type="pass" class="form-label">Password</label> -->
+                    <!-- <input type="password" class="input" placeholder="Password" id="pass" /> -->
+                    
+                    <form action="login.php" method="post">
+                        <input type="text" name="username" placeholder="Username or email" id="username">
+                        <input type="password" name="password" placeholder="Password" id="password">
+                        <input type="submit" value="Login" onclick="validate()">
+                    </form>
+                </div>
+                <div class="form-down">
+                    <div class="for-check">
+                        <p>Forgot your password?</p>
+                    </div>
+                    <!-- <button type="button">Sign in</button> -->
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+        <!-- <div class="container">
+            <h1>Login/Sign in</h1>
+            <form action="login.php" method="post">
+                <input type="text" name="username" placeholder="Username" id="username">
+                <input type="password" name="password" placeholder="Password" id="password">
+                <input type="submit" value="Login" onclick="validate()">
+            </form>
+        </div> -->
+    </header>
+    <script src="https://kit.fontawesome.com/422d4d5e5e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
